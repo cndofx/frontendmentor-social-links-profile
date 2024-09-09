@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+  --clr-primary-300: hsl(75, 94%, 57%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-700: hsl(0, 0%, 20%);
+  --clr-neutral-800: hsl(0, 0%, 12%);
+  --clr-neutral-900: hsl(0, 0%, 8%);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-900);
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  background-color: var(--clr-neutral-800);
+  border-radius: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  padding: 3em;
+  width: 90%;
+  max-width: 400px;
+}
+
+.profile-photo {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px
+}
+
+.name-and-location {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.name {
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.location {
+  color: var(--clr-primary-300);
+  font-weight: 600;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  width: 100%;
+}
+
+.link {
+  width: 100%;
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-700);
+  border-radius: 0.75em;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 1em;
+}
+
+.link:hover {
+  color: var(--clr-neutral-700);
+  background-color: var(--clr-primary-300);
+}
+
+.attribution {
+  color: var(--clr-neutral-100);
+  font-size: 0.75em;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.attribution a {
+  color: var(--clr-primary-300);
+}
